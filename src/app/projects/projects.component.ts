@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-
+  @Input() projectsSlides: any[] = [];
 }

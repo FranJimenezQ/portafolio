@@ -29,19 +29,33 @@ export class AppComponent {
     });
     this.visibleSections[section] = true;
   }
+
+  projectsSlides: any [ ] = [
+    {
+      url: '/assets/images/drinksApp.png',
+      title: "",
+      description: ""
+    },
+    {
+      url: "/assets/images/memroryGame.png",
+      title: "",
+      description: ""
+    },
+    {
+      url: "/assets/images/notiWeb.png",
+      title: "",
+      description: ""
+    },
+    {
+      url: "/assets/images/rottenMovies38.png",
+      title: "",
+      description: ""
+    },
+    {
+      url: "/assets/images/webTemplate.png",
+      title: "",
+      description: ""
+    }
+  ]
 }
 
-// this.visibleSections[section] = !this.visibleSections[section] 
-// if (this.visibleSections.skills == true) {
-//     this.visibleSections.contact = false;
-//     this.visibleSections.projects = false;
-
-// }
-// if (this.visibleSections.contact) {
-//   this.visibleSections.skills = false;
-//   this.visibleSections.projects = false
-// }
-// if (this.visibleSections.projects) {
-//   this.visibleSections.contact = false;
-//   this.visibleSections.skills = false;
-// }

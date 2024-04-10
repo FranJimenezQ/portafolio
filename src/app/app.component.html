@@ -65,7 +65,7 @@
       <app-skills></app-skills>
     </div>
     <div *ngIf="visibleSections.projects" class="app-projects-content">
-      <app-projects></app-projects>
+      <app-projects [projectsSlides]="projectsSlides"></app-projects>
     </div>
     <div *ngIf="visibleSections.contact" class="app-contacts">
       <app-contact></app-contact>
