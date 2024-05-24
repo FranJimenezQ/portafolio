@@ -1,9 +1,0 @@
-.projectsSlides{
-    width: 300px;
-    height: 200px;
-    border: 1px solid #145896;
-}
-
-:host{
-    display: block;
-}

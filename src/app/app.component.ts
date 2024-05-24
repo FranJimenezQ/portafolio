@@ -10,7 +10,7 @@ import { NgIf } from '@angular/common';
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
-    styleUrl: './app.component.css',
+    styleUrl: './app.component.scss',
     imports: [RouterOutlet, AboutComponent, SkillsComponent, ContactComponent, ProjectsComponent, NgIf]
 })
 export class AppComponent {
@@ -30,32 +30,6 @@ export class AppComponent {
     this.visibleSections[section] = true;
   }
 
-  projectsSlides: any [ ] = [
-    {
-      url: '/assets/images/drinksApp.png',
-      title: "",
-      description: ""
-    },
-    {
-      url: "/assets/images/memroryGame.png",
-      title: "",
-      description: ""
-    },
-    {
-      url: "/assets/images/notiWeb.png",
-      title: "",
-      description: ""
-    },
-    {
-      url: "/assets/images/rottenMovies38.png",
-      title: "",
-      description: ""
-    },
-    {
-      url: "/assets/images/webTemplate.png",
-      title: "",
-      description: ""
-    }
-  ]
+
 }
 

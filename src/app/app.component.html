@@ -3,7 +3,6 @@
   <div class="content">
     <div class="left-side">
       <app-about></app-about>
-      🎉
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
@@ -65,7 +64,7 @@
       <app-skills></app-skills>
     </div>
     <div *ngIf="visibleSections.projects" class="app-projects-content">
-      <app-projects [projectsSlides]="projectsSlides"></app-projects>
+      <app-projects></app-projects>
     </div>
     <div *ngIf="visibleSections.contact" class="app-contacts">
       <app-contact></app-contact>

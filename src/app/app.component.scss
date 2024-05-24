@@ -33,26 +33,23 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
+body{
+  background-color: black;
+}
 
   main {
-
     min-height: 100%;
     display: flex;
-    justify-content: flex-start;
-    padding: 1rem;
-    box-sizing: inherit;
-    position: relative;
-    /* align-content: center; */
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
   }
 
   .content {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     width: 100%;
-    max-width: 700px;
     margin-bottom: 3rem;
   }
 
@@ -72,10 +69,9 @@
 
   .pill-group {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    flex-wrap: wrap;
-    gap: 1.25rem;
+    justify-content: space-around;
+    width: 100%;
+    margin: 1rem 0;
   }
 
   .pill {
@@ -86,8 +82,6 @@
     color: var(--pill-accent);
     padding-inline: 0.75rem;
     padding-block: 0.375rem;
-    border-radius: 2.75rem;
-    border: 0;
     transition: background 0.3s ease;
     font-family: var(--inter-font);
     font-size: 0.875rem;
@@ -96,6 +90,11 @@
     line-height: 1.4rem;
     letter-spacing: -0.00875rem;
     text-decoration: none;
+
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
   }
 
   .pill:hover {
@@ -109,9 +108,8 @@
 
   .social-links {
     display: flex;
-    align-items: center;
-    gap: 0.73rem;
-    margin-top: 1.5rem;
+    justify-content: center;
+    margin: 1rem 0;
   }
 
   .social-links path {
@@ -123,18 +121,48 @@
     fill: var(--gray-900);
   }
   .content-above{ 
-    display: flex;
-  }
-  @media screen and (max-width: 650px) {
-    .content {
-      flex-direction: column;
-      width: max-content;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
     }
 
-    .divider {
-      height: 1px;
-      width: 100%;
-      background: var(--red-to-pink-to-purple-horizontal-gradient);
-      margin-block: 1.5rem;
+    .app-skills-content, .app-projects-content, .app-contacts {
+      margin-top: 1rem;
     }
+
+    
+/* Mobile */
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
   }
+
+  .right-side {
+    width: 50%;
+    //display: flex;
+  }
+
+  .divider {
+    display: block;
+    width: 2px;
+    background-color: #ddd;
+    margin: 0 1rem;
+  }
+
+  .pill-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+  }
+}
+// @media (max-width: 768px) {
+//   .content {
+//     flex-direction: row;
+//     .left-side{
+//       display: flex;
+//     }
+//   }
+// }
