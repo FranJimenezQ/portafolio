@@ -1,21 +1,27 @@
 .about-me-container{
-    width: 520px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     .header{
         display: flex;
+        flex-direction: column;
         width: 100%;
+        align-items: center;
+
+        .img-container{
+            .photoProfile{
+                width:50px; 
+                height:50px;
+                border-radius: 50%;
+            }
+            
+        }
     }
-    .photoProfile{
-        width:50px; 
-        height:50px;
-        border-radius: 50%;
-    }
-    
     .about-me-title{
         font-size: 22px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-weight: 800;
+        color: #ffffff;
     }
     
     .about-me-description{
@@ -23,6 +29,10 @@
         font-size: 16px;
         text-align: justify;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        .description{
+            color: #ffffff;
+        }
     
     }
 }

@@ -1,3 +1,6 @@
+  body{
+    background-color: aqua;
+  }
   :host {
     --bright-blue: oklch(51.01% 0.274 263.83);
     --electric-violet: oklch(53.18% 0.28 296.97);
@@ -33,9 +36,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-body{
-  background-color: black;
-}
 
   main {
     min-height: 100%;
