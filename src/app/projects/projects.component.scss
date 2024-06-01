@@ -1,11 +1,14 @@
-.carouselSlide{
-  border: 12px solid #accfe7;
-}
-.carousel-control-prev-icon{
-  color: aquamarine;
+#carouselExampleInterval{
+  .carousel-inner{
+    .carousel-item{
+      h3, p, a{
+        color: #ffffff;
+      }
+    }
+  }
 }
 .projects-title h3{
   width: 100%;
   text-align: center;
-  color: aqua;
+  color: #ffffff;
 }

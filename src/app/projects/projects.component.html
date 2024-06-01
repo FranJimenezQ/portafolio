@@ -1,27 +1,3 @@
-<!-- <div id="carouselExampleInterval" class="carouselSlide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="./../../assets/images/memoryGame.png" class="d-block w-100" alt="memoryGame">
-      <span>"memoryGame"</span>
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="./../../assets/images/drinksApp.png" class="d-block w-100" alt="drinksApp">
-      <span>"drinksApp"</span>
-    </div>
-    <div class="carousel-item">
-      <img src="./../../assets/images/notiWeb.png" class="d-block w-100" alt="notiWeb">
-      <span>"notiWeb"</span>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</div> -->
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="projects-title">
     <h3>Some of my projects!</h3>
@@ -29,7 +5,9 @@
   <div class="carousel-inner">
     <div *ngFor="let slide of projectsSlides; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
       <img [src]="slide.url" class="d-block w-100" [alt]="slide.title">
-      <span>{{ slide.title }}</span>
+      <h3>{{ slide.title }}</h3>
+      <p>{{slide.description}}</p>
+      <a [href]="slide.projectUrl" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">

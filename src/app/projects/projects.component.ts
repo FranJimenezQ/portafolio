@@ -16,28 +16,36 @@ export class ProjectsComponent {
   projectsSlides = [
     {
       url: './../../assets/images/memoryGame.png',
-      title: "memoryGame",
-      description: ""
+      title: "Memory Game",
+      description: "Memory game developed with JavaScript",
+      projectUrl: "https://franjimenezq.github.io/memory-game/"
     },
     {
       url: "./../../assets/images/drinksApp.png",
-      title: "drinksApp",
-      description: ""
+      title: "Drinks App",
+      description: "Drinks app created with Angular",
+      projectUrl: "https://franjimenezq.github.io/drinks-app/"
+
     },
     {
       url: "./../../assets/images/notiWeb.png",
-      title: "notiWeb",
-      description: ""
+      title: "NotiWeb",
+      description: "News website built with HTML, CSS and Javascript",
+      projectUrl: "https://franjimenezq.github.io/Noti-Web/"
+
     },
     {
       url: "/assets/images/rottenMovies38.png",
-      title: "rottenMovies38",
-      description: ""
+      title: "Rotten Movies 38",
+      description: "Movie rating app using Angular",
+      projectUrl: "https://franjimenezq.github.io/movie-Angular-App/"
+
     },
     {
       url: "/assets/images/webTemplate.png",
-      title: "webTemplate",
-      description: ""
+      title: "Web Template",
+      description: "Web template created with HTML & CSS",
+      projectUrl: "https://franjimenezq.github.io/Flakundo-Web-Template1/"
     }
   ];
 }

@@ -1,6 +1,9 @@
-<section>
-    <h2>Contacto</h2>
-    <p>Puedes encontrarme en:</p>
-    <!-- Agrega tus detalles de contacto aquí -->
-  </section>
-  
+<div class="contact-container">
+  <div class="contact" *ngFor="let contact of contact">
+    <img [src]="contact.icon" alt="{{ contact.name }} icon" class="contact-icon">
+    <div class="skill-info">
+      <h3>{{ contact.name }}</h3>
+      <p>{{ contact.medio }}</p>
+    </div>
+  </div>
+</div>
