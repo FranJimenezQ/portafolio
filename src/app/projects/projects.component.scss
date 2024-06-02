@@ -1,10 +1,16 @@
 #carouselExampleInterval{
   .carousel-inner{
     .carousel-item{
-      h3, p, a{
-        color: #ffffff;
+      .project-info{
+        align-items: center;
+        h3, p, a{
+          color: #ffffff;
+        }
       }
     }
+  }
+  .carousel-control-prev, .carousel-control-next{
+    height: 25px !important;
   }
 }
 .projects-title h3{

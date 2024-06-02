@@ -110,6 +110,12 @@
     display: flex;
     justify-content: center;
     margin: 1rem 0;
+    a{
+      svg{
+        width: 100px;
+        height: 50px;
+      }
+    }
   }
 
   .social-links path {
@@ -118,7 +124,7 @@
   }
 
   .social-links a:hover svg path {
-    fill: var(--gray-900);
+    fill: var(--vivid-pink);
   }
   .content-above{ 
     width: 100%;
@@ -155,7 +161,7 @@
   }
 
   .social-links {
-    justify-content: flex-start;
+    justify-content: space-around;
   }
 }
 // @media (max-width: 768px) {

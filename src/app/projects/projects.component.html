@@ -5,9 +5,11 @@
   <div class="carousel-inner">
     <div *ngFor="let slide of projectsSlides; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
       <img [src]="slide.url" class="d-block w-100" [alt]="slide.title">
-      <h3>{{ slide.title }}</h3>
-      <p>{{slide.description}}</p>
-      <a [href]="slide.projectUrl" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+      <div class="project-info">
+        <h3>{{ slide.title }}</h3>
+        <p>{{slide.description}}</p>
+        <a [href]="slide.projectUrl" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+      </div>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
