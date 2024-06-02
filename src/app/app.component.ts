@@ -28,8 +28,13 @@ export class AppComponent {
       this.visibleSections[key as keyof typeof this.visibleSections] = false;
     });
     this.visibleSections[section] = true;
+    
+    setTimeout(() => {
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 0);
   }
-
-
 }
 

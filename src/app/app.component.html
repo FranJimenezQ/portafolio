@@ -60,13 +60,13 @@
     </div>
   </div>
   <div class="content-above">
-    <div *ngIf="visibleSections.skills" class="app-skills-content">
+    <div id="skills" *ngIf="visibleSections['skills']" class="app-skills-content">
       <app-skills></app-skills>
     </div>
-    <div *ngIf="visibleSections.projects" class="app-projects-content">
+    <div id="projects" *ngIf="visibleSections['projects']" class="app-projects-content">
       <app-projects></app-projects>
     </div>
-    <div *ngIf="visibleSections.contact" class="app-contacts">
+    <div id="contact" *ngIf="visibleSections['contact']" class="app-contacts">
       <app-contact></app-contact>
     </div>
   </div>
