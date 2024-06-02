@@ -1,5 +1,6 @@
 import { NgClass, NgFor } from '@angular/common';
-import { Component, Input, input } from '@angular/core';
+import { Component } from '@angular/core';
+import { environment } from '../../environment';
 
 @Component({
   selector: 'app-projects',
@@ -16,34 +17,34 @@ export class ProjectsComponent {
 
   projectsSlides = [
     {
-      url: '/portafolio/assets/images/memoryGame.png',
+      url: environment.assetsPath + 'memoryGame.png',
       title: "Memory Game",
       description: "Memory game developed with JavaScript",
       projectUrl: "https://franjimenezq.github.io/memory-game/"
     },
     {
-      url: "/portafolio/assets/images/drinksApp.png",
+      url: environment.assetsPath + "drinksApp.png",
       title: "Drinks App",
       description: "Drinks app created with Angular",
       projectUrl: "https://franjimenezq.github.io/drinks-app/"
 
     },
     {
-      url: "/portafolio/assets/images/notiWeb.png",
+      url: environment.assetsPath + "notiWeb.png",
       title: "NotiWeb",
       description: "News website built with HTML, CSS and Javascript",
       projectUrl: "https://franjimenezq.github.io/Noti-Web/"
 
     },
     {
-      url: "/portafolio/assets/images/rottenMovies38.png",
+      url: environment.assetsPath + "rottenMovies38.png",
       title: "Rotten Movies 38",
       description: "Movie rating app using Angular",
       projectUrl: "https://franjimenezq.github.io/movie-Angular-App/"
 
     },
     {
-      url: "/portafolio/assets/images/webTemplate.png",
+      url: environment.assetsPath + "webTemplate.png",
       title: "Web Template",
       description: "Web template created with HTML & CSS",
       projectUrl: "https://franjimenezq.github.io/Flakundo-Web-Template1/"
