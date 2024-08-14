@@ -48,6 +48,12 @@ export class ProjectsComponent {
       title: "Web Template",
       description: "Web template created with HTML & CSS",
       projectUrl: "https://franjimenezq.github.io/Flakundo-Web-Template1/"
+    },
+    {
+      url: environment.assetsPath + "flakundoWeatherApp.png",
+      title: "Weather App",
+      description: "Weather App created using React, weatherApp Api and Google places api",
+      projectUrl: "https://franjimenezq.github.io/WeatherApp/"
     }
   ];
 }
