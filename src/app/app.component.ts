@@ -17,7 +17,7 @@ import { environment } from '../environment.prod';
 export class AppComponent {
   title = 'francisco-jimenez-portafolio';
 
-  public  environmentAssetsPath = environment.assetsPath;
+  public  environmentAssetsCvPath = environment.cvAssetsPath;
 
   visibleSections = {
     about: false,
