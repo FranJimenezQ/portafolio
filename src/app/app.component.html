@@ -7,11 +7,11 @@
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
       <div class="pill-group">
-        <button class="pill" (click)="toggleDiv('skills')"> Skills</button>
-        <button class="pill" (click)="toggleDiv('projects')">Projects!</button>
-        <button class="pill" (click)="toggleDiv('contact')">Contact me!</button>
-        <a href="{{environmentAssetsCvPath}}/FranciscoJimenezQuesadaResume.pdf" download="FranciscoJimenezQuesadaResume.pdf">
-          <button class="pill">Download CV!</button>
+        <button class="pill" [class.active]="visibleSections()['skills']" (click)="toggleDiv('skills')">Skills</button>
+        <button class="pill" [class.active]="visibleSections()['projects']" (click)="toggleDiv('projects')">Projects</button>
+        <button class="pill" [class.active]="visibleSections()['contact']" (click)="toggleDiv('contact')">Contact me</button>
+        <a href="{{environmentAssetsCvPath}}FranciscoJimenez_CV.pdf" download="FranciscoJimenez_CV.pdf">
+          <button class="pill">Download CV</button>
         </a>
       </div>
       <div class="social-links">
@@ -63,14 +63,20 @@
     </div>
   </div>
   <div class="content-above">
-    <div id="skills" *ngIf="visibleSections['skills']" class="app-skills-content">
-      <app-skills></app-skills>
-    </div>
-    <div id="projects" *ngIf="visibleSections['projects']" class="app-projects-content">
-      <app-projects></app-projects>
-    </div>
-    <div id="contact" *ngIf="visibleSections['contact']" class="app-contacts">
-      <app-contact></app-contact>
-    </div>
+    @if (visibleSections()['skills']) {
+      <div id="skills" class="app-skills-content" @fadeIn>
+        <app-skills></app-skills>
+      </div>
+    }
+    @if (visibleSections()['projects']) {
+      <div id="projects" class="app-projects-content" @fadeIn>
+        <app-projects></app-projects>
+      </div>
+    }
+    @if (visibleSections()['contact']) {
+      <div id="contact" class="app-contacts" @fadeIn>
+        <app-contact></app-contact>
+      </div>
+    }
   </div>
 </main>

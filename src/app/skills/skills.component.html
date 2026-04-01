@@ -1,9 +1,11 @@
 <div class="skills-container">
-  <div class="skill" *ngFor="let skill of skills">
-    <img [src]="skill.icon" alt="{{ skill.name }} icon" class="skill-icon">
-    <div class="skill-info">
-      <h3>{{ skill.name }}</h3>
-      <p>{{ skill.description }}</p>
+  @for (skill of skills; track skill.name) {
+    <div class="skill">
+      <img [src]="skill.icon" alt="{{ skill.name }} icon" class="skill-icon">
+      <div class="skill-info">
+        <h3>{{ skill.name }}</h3>
+        <p>{{ skill.description }}</p>
+      </div>
     </div>
-  </div>
+  }
 </div>

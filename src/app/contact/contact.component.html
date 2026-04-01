@@ -1,9 +1,11 @@
 <div class="contact-container">
-  <div class="contact" *ngFor="let contact of contact">
-    <img [src]="contact.icon" alt="{{ contact.name }} icon" class="contact-icon">
-    <div class="skill-info">
-      <h3>{{ contact.name }}</h3>
-      <p>{{ contact.medio }}</p>
+  @for (item of contact; track item.name) {
+    <div class="contact">
+      <img [src]="item.icon" alt="{{ item.name }} icon" class="contact-icon">
+      <div class="skill-info">
+        <h3>{{ item.name }}</h3>
+        <a [href]="item.link">{{ item.medio }}</a>
+      </div>
     </div>
-  </div>
+  }
 </div>
