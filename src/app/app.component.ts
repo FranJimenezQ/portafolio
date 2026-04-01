@@ -4,7 +4,7 @@ import { AboutComponent } from "./about/about.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { ContactComponent } from "./contact/contact.component";
 import { ProjectsComponent } from "./projects/projects.component";
-import { environment } from '../environment.prod';
+import { environment } from '../environment';
 
 @Component({
     selector: 'app-root',
