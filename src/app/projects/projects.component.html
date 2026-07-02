@@ -1,25 +1,43 @@
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleInterval" class="projects-section" data-bs-ride="carousel">
   <div class="projects-title">
     <h3>Some of my projects!</h3>
   </div>
-  <div class="carousel-inner">
-    @for (slide of projectsSlides; track slide.title; let i = $index) {
-      <div class="carousel-item" [class.active]="i === 0">
-        <img [src]="slide.url" class="d-block w-100" [alt]="slide.title">
-        <div class="project-info">
-          <h3>{{ slide.title }}</h3>
-          <p>{{ slide.description }}</p>
-          <a [href]="slide.projectUrl" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+  <div class="projects-grid">
+    @for (project of projects; track project.title) {
+      <div class="project-card">
+        @if (project.isClicklease) {
+          <div class="clicklease-log">
+            <span class="cl-icon">&#10094;</span>
+            <span class="cl-text">clicklease</span>
+          </div>
+        } @else {
+          <div class="project-image-wrap">
+            @if (project.image) {
+              <img [src]="project.image" [alt]="project.title" class="project-image">
+            }
+          </div>
+        }
+        <div class="project-body">
+          <h5 class="project-title">{{ project.title }}</h5>
+          <p class="project-description">{{ project.description }}</p>
+          <div class="project-stack">
+            @for (tag of project.stack; track tag;) {
+              <span class="stack-tag">{{ tag }}</span>
+            }
+          </div>
         </div>
+
+        <div class="project-footer">
+          @if (project.projectUrl) {
+            <a [href]="project.projectUrl" target="_blank" rel="noopener noreferrer" class="project-btn">
+              {{ project.urlLabel }} →
+            </a>
+          } @else {
+            <span class="project-btn private">{{ project.urlLabel }}</span>
+          }
+        </div>
+
       </div>
     }
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
