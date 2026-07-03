@@ -1,8 +1,8 @@
 export const environment = {
     production: true,
-    baseHref: '/portafolio/',
-    assetsPath: '/portafolio/assets/images/',
-    cvAssetsPath: '/portafolio/assets/cv/'
+    baseHref: '/',
+    assetsPath: '/assets/images/',
+    cvAssetsPath: '/assets/cv/'
 
   };
   
