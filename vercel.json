@@ -1,5 +1,5 @@
 {
     "buildCommand": "npm run build",
-    "outputDirectory": "dist/francisco-jimenez-portafolio",
+    "outputDirectory": "dist",
     "framework": "angular"
 }
